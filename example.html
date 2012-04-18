@@ -12,13 +12,17 @@ $(document).ready( function(){
 		//alert("bleh!");
 		$(".overlay").ajaxOverlay();
 	});
+	$("#endload").click(function(){
+		//alert("bleh!");
+		$(".overlay").ajaxOverlay({ action:'end'});
+	});
 });
 
 </script>
 
 <body>
 	<div class="wrapper">
-		<nav><a id="start" class="btn">Start overlay</a> <a class="btn">End overlay</a></nav>
+		<nav><a id="start" class="btn">Start overlay</a> <a id="endload" class="btn">End overlay</a></nav>
 		<div class="clear"></div>
 		<div class="overlay">
 			<!-- start slipsum code -->
