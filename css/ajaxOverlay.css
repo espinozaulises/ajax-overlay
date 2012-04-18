@@ -1,0 +1,41 @@
+.ui-block-message {
+	background: transparent;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    min-width: 45px;
+    z-index: 1001;
+}
+
+.ui-gif-loading {
+    background: url("images/ajax-loader.gif") no-repeat scroll center center;
+	height: 42px;
+	margin: 0 auto;
+    width: 42px;   
+}
+
+.ui-text-loading {
+	color: #F15A2B;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: 700;
+}
+
+.ui-overlay {
+    background: #fff url(images/diagonal-white.png) 50% 50% repeat;
+    opacity: .90;
+    filter:Alpha(Opacity=90);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Overlays 
+.ui-widget-overlay {
+    background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
+    opacity: .70;
+    filter:Alpha(Opacity=70);
+}*/
