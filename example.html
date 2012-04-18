@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+	<title>Simple AJAX Overlay</title>
+</head>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/ajaxOverlay.css">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.ajaxOverlay.js" type="text/javascript"></script>
+<script>
+$(document).ready( function(){
+	$("#start").click(function(){
+		//alert("bleh!");
+		$(".overlay").ajaxOverlay();
+	});
+});
+
+</script>
+
+<body>
+	<div class="wrapper">
+		<nav><a id="start" class="btn">Start overlay</a> <a class="btn">End overlay</a></nav>
+		<div class="clear"></div>
+		<div class="overlay">
+			<!-- start slipsum code -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper placerat leo ut placerat. Quisque pulvinar, tortor id sollicitudin vestibulum, quam risus convallis quam, sit amet porta dui turpis ac est. Vivamus sodales, urna quis auctor fringilla, enim nulla sollicitudin neque, quis consectetur elit massa vel magna. Mauris id congue eros. Mauris dignissim egestas consectetur. Suspendisse potenti.</p>
+
+			<!-- please do not remove this line -->
+
+			<div style="display:none;"><a href="http://slipsum.com">lorem ipsum</a></div>
+
+			<!-- end slipsum code -->
+
+		</div>
+	</div>	
+
+</body>
+</html>
