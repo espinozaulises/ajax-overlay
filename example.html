@@ -9,13 +9,12 @@
 <script>
 $(document).ready( function(){
 	$("#start").click(function(){
-		//alert("bleh!");
-		$(".overlay").ajaxOverlay();
+		$("#contenedor").ajaxOverlay();
 	});
 	$("#endload").click(function(){
-		//alert("bleh!");
-		$(".overlay").ajaxOverlay({ action:'end'});
+		$("#contenedor").ajaxOverlay("hidden",{animated:'false'});
 	});
+	
 });
 
 </script>
@@ -24,7 +23,7 @@ $(document).ready( function(){
 	<div class="wrapper">
 		<nav><a id="start" class="btn">Start overlay</a> <a id="endload" class="btn">End overlay</a></nav>
 		<div class="clear"></div>
-		<div class="overlay">
+		<div class="overlay" id="contenedor">
 			<!-- start slipsum code -->
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper placerat leo ut placerat. Quisque pulvinar, tortor id sollicitudin vestibulum, quam risus convallis quam, sit amet porta dui turpis ac est. Vivamus sodales, urna quis auctor fringilla, enim nulla sollicitudin neque, quis consectetur elit massa vel magna. Mauris id congue eros. Mauris dignissim egestas consectetur. Suspendisse potenti.</p>
 
